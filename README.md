@@ -13,8 +13,8 @@ These findings underscore the efficacy of mixed-domain pretraining in building h
 ## Repository Structure
 The repository is organized as follows:
 
-- **`Scripts/`**: Contains all scripts necessary to execute the code used in the paper.
 - **`Data/`**: Includes the datasets used for model training and evaluation.
+- **`Scripts/`**: Contains all scripts necessary to execute the code used in the paper.
 
 To ensure proper execution, both the script file and dataset CSV files must be located in the same directory.
 
@@ -23,7 +23,7 @@ To ensure proper execution, both the script file and dataset CSV files must be l
 ### Running Transformer-based Models
 To train or evaluate transformer-based models, execute the script with the following command:
 ```bash
-python <script_name>.py --m <model_name_or_path>
+python <script_name>.py -m <model_name_or_path>
 ```
 
 Where:
@@ -32,7 +32,7 @@ Where:
 
 Example:
 ```bash
-python seq_classification_16_32.py --m FacebookAI/xlm-roberta-base
+python seq_classification_16_32.py -m FacebookAI/xlm-roberta-base
 ```
 
 ### Running GPT-based Models
@@ -42,7 +42,7 @@ export OPENAI_API_KEY="your_api_key_here"
 ```
 Then, execute the script:
 ```bash
-python <script_name>.py
+python <gpt_script_name>.py
 ```
 Ensure that the API key is correctly set, as the script will use it to interact with OpenAI's API.
 
