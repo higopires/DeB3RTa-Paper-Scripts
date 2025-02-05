@@ -42,7 +42,7 @@ export OPENAI_API_KEY="your_api_key_here"
 ```
 Then, execute the script:
 ```bash
-python <gpt_script_name>.py
+python <gpt_script_name>.py --folder <folder where the test.csv is located.>
 ```
 Ensure that the API key is correctly set, as the script will use it to interact with OpenAI's API.
 
